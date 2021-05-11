@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" href="style.css" />
+	
+  </head>
+  <body>
+	<ul>
+		<li id="li1"><a href="original.html">Original</a></li>
+		<li id="li2"><a href="svg.html">Svg</a></li>
+	</ul>
+	<div id="tshirt">
+		<img src="tshirt.jpg" >
+	</div>
+	<div id="logo">
+		<div id="nike">	
+		<canvas id="myCanvas" width="2000" height="500"></canvas>
+		</div>
+		<div id="napis">
+		<canvas id="myCanvas2" width="2000" height="1000"></canvas>
+		</div>
+	</div>
+	
+	
+	<script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(250, 10);
+      context.bezierCurveTo(20, 290, 100, 490, 430, 370);
+	  context.quadraticCurveTo(430, 375, 1200, 10);
+	  context.quadraticCurveTo(1200, 10, 450, 225);
+	  context.bezierCurveTo(340, 250, 130, 240, 250, 10);
+      context.lineWidth = 5;
+
+      // line color
+      //context.strokeStyle = 'black';
+      //context.stroke();
+	  context.fillStyle='black';
+	  context.fill();
+	</script>
+	 <script>
+      var canvas = document.getElementById('myCanvas2');
+      var ctx = canvas.getContext('2d');
+		ctx.beginPath();
+		ctx.moveTo(100, 20);
+		ctx.bezierCurveTo(50, 350, 50, 350, 50, 350);
+		ctx.quadraticCurveTo(50, 350, 120, 350);
+		ctx.quadraticCurveTo(120, 350, 170, 20);
+		ctx.quadraticCurveTo(170, 20, 300, 350);
+		ctx.quadraticCurveTo(300, 350, 350, 20);
+		ctx.quadraticCurveTo(350, 20, 280, 20);
+		ctx.quadraticCurveTo(280, 20, 230, 350);
+		ctx.quadraticCurveTo(230, 350, 100, 20);
+		ctx.quadraticCurveTo(100, 20, 170, 20);
+		ctx.quadraticCurveTo(170, 20, 300, 350);
+		ctx.quadraticCurveTo(300, 350, 230, 350);
+		ctx.stroke();
+		ctx.lineWidth = 5;
+
+      // line color
+      //ctx.strokeStyle = 'black';
+      //ctx.stroke();
+	  ctx.fillStyle='black';
+	  ctx.fill();
+    </script>
+	<script>
+      var canvas = document.getElementById('myCanvas2');
+      var ctx = canvas.getContext('2d');
+		ctx.beginPath();
+		ctx.moveTo(380, 20);
+		ctx.quadraticCurveTo(330, 350, 330, 350);
+		ctx.quadraticCurveTo(330, 350, 400, 350);
+		ctx.quadraticCurveTo(400, 350, 450, 20);
+		ctx.quadraticCurveTo(450, 20, 380, 20);
+		
+		ctx.stroke();
+		ctx.lineWidth = 5;
+
+      // line color
+      //ctx.strokeStyle = 'black';
+      //ctx.stroke();
+	  ctx.fillStyle='Black';
+	  ctx.fill();
+    </script>
+	<script>
+      var canvas = document.getElementById('myCanvas2');
+      var ctx = canvas.getContext('2d');
+		ctx.beginPath();
+		ctx.moveTo(480, 20);
+		ctx.quadraticCurveTo(430, 350, 430, 350);
+		ctx.quadraticCurveTo(430, 350, 500, 350);
+		ctx.quadraticCurveTo(500, 350, 523, 198);
+		ctx.quadraticCurveTo(523, 198, 576, 350);
+		ctx.quadraticCurveTo(576, 350, 646, 350);
+		ctx.quadraticCurveTo(646, 350, 583, 132);
+		ctx.quadraticCurveTo(583, 132, 696, 20);
+		ctx.quadraticCurveTo(696, 20, 626, 20);
+		ctx.quadraticCurveTo(626, 20, 537, 107);
+		ctx.quadraticCurveTo(537, 107, 550, 20);
+		ctx.quadraticCurveTo(550, 20, 480, 20);
+		
+		ctx.stroke();
+		ctx.lineWidth = 5;
+
+      // line color
+      //ctx.strokeStyle = 'black';
+      //ctx.stroke();
+	  ctx.fillStyle='Black';
+	  ctx.fill();
+    </script>		
+	<script>
+      var canvas = document.getElementById('myCanvas2');
+      var ctx = canvas.getContext('2d');
+		ctx.beginPath();
+		ctx.moveTo(726, 20);
+		ctx.quadraticCurveTo(676, 350, 676, 350);
+		ctx.quadraticCurveTo(676, 350, 746, 350);
+		ctx.quadraticCurveTo(746, 350, 796, 20);
+		ctx.quadraticCurveTo(796, 20, 726, 20);
+		ctx.moveTo(796, 20);
+		ctx.quadraticCurveTo(796, 20, 895, 20);
+		ctx.quadraticCurveTo(896, 20, 889, 69.5);
+		ctx.quadraticCurveTo(889, 69.5, 790, 70.064);
+		ctx.moveTo(775, 160.25);
+		ctx.quadraticCurveTo(775, 160.25,875,160.25);
+		ctx.quadraticCurveTo(875, 160.25,867,209.75);
+		ctx.quadraticCurveTo(867, 209.75,767,209.75);
+		ctx.moveTo(755,300);
+		ctx.quadraticCurveTo(755,300,853,300);
+		ctx.quadraticCurveTo(853,300,846,350);
+		ctx.quadraticCurveTo(846,350,747,350);
+		
+		ctx.stroke();
+		ctx.lineWidth = 5;
+
+      // line color
+      //ctx.strokeStyle = 'black';
+      //ctx.stroke();
+	  ctx.fillStyle='Black';
+	  ctx.fill();
+    </script>
+	<script>
+    function App() {
+  var canvas = document.getElementById("myCanvas");
+  this.context = canvas.getContext('2d');
+  document.addEventListener('mousedown', this.onClick.bind(this), false);
+}
+
+App.prototype.onClick = function(event) {
+ 
+  if (event.which === 1) {
+    var color = [];
+    for (var i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    this.fill('rgb(' + color.join(',') + ')');
+  }
+};
+
+App.prototype.fill = function(color) {
+  this.context.fillStyle = color;
+  this.context.fill();
+};
+
+
+function run() {
+  new App();
+}
+
+window.onload = run;
+run();
+
+</script>
+
+  </body>
+</html>

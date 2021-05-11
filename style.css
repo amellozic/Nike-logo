@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+	margin:0px;
+	list-style-type:none;
+	background-color:black;
+	height:60px;
+}
+#li1{
+	position:absolute;
+	left:10px;
+}
+#li2{
+	position:absolute;
+	left:190px;
+}
+a{
+	position:absolute;
+	text-align:center;
+	left:20px;
+	text-decoration: none;
+	font-size: 40px;
+	color:white;
+	background-color:black;
+}
+a:hover{
+	background-color:white;
+	color:black;
+	height:60px;
+}
+#nike{
+	height:110mm;
+	width:320mm;
+	transform: scale(0.30);
+}
+#napis{
+	position:absolute;
+	top:-284px;
+	left:-295px;
+	float:left;
+	transform: scale(0.21);
+}
+#logo{
+	position:absolute;
+	transform: scale(1);
+	top:220px;
+	left:380px;
+}
+#tshirt{
+	position:absolute;
+	left:350px;
+	transform: scale(0.95);
+}
